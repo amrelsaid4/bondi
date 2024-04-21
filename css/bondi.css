@@ -1,0 +1,205 @@
+body {
+    font-family: "Roboto", sans-serif;
+}
+:root{
+    --dark-color: #19283f;
+    --green-color: #33d1cc;
+    --yellow-color: #ffc400;
+    --section-color: #eff7fa;
+}
+.btn-color:hover{
+    color: white !important;
+}
+.row{
+    --bs-gutter-x: 0rem !important;
+}
+.test .content button:hover{
+    color: white;
+} 
+.main-title::after{
+    content: '';
+    position: absolute;
+    background-color: var(--green-color);
+    width: 120px;
+    height: 2px;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+body  .main-btn{
+    border-radius: 30px;
+}
+nav{
+    background-color: var(--dark-color);
+}
+nav .nav-link{
+    color: white;
+}
+nav .nav-link:focus,
+nav .nav-link:hover{
+    color: var(--green-color);
+}
+nav .navbar-toggler svg{
+    color: white;
+    border: 1px solid white;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+nav .navbar-toggler:focus{
+    box-shadow: none;
+}
+nav .icon{
+    color: var(--green-color);
+    border-left: 1px solid var(--green-color) ;
+}
+.test{
+    height: calc(100vh - 67.2px);
+    background-color: var(--dark-color) ;
+}
+.test .content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+.feat .icon-holder{
+    height: 200px;
+}
+.feat .icon-holder svg{
+    left: 50%;
+    transform: translateX(-50%);
+}
+.feat .icon-holder .number{
+    font-size: 12rem;
+    color: var(--section-color);
+}
+.feat .icon-holder .pen{
+    color: var(--green-color);
+}
+.row h4{
+    color: var(--yellow-color);
+}
+.our-work{
+    background-color: var(--section-color);
+}
+.our-work .links ul{
+    justify-content: center;
+    flex-direction: row;
+    color: white;
+}
+.our-work .links ul li.active,
+.our-work .links ul li:focus,
+.our-work .links ul li:hover{
+    color: var(--green-color) !important;
+    border-bottom: 2px solid var(--green-color);
+    cursor: pointer;
+}
+.our-work .box{
+    padding: 5px;
+    position: relative;
+    overflow: hidden;
+}
+.our-work .box::before{
+    content: attr(data-work);
+    position: absolute;
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    background-color: rgb(51 209 204 / 76%);
+    width: calc(100% - 10px);;
+    display: flex;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+    transform: translateX(calc( -100% - 10px ));
+}
+.our-work .box:hover::before{
+    transform: translateX(0);
+  }
+.our-work  button:focus{
+    color: var(--green-color);
+}
+.p{
+    max-width: 500px;
+}
+.team{
+    background-color: var(--section-color);
+}
+.team h4{
+    color: var(--yellow-color);
+}
+.team .box {
+    padding: 0px 12px;
+}
+.team .box h4{
+    background-color: var(--green-color);
+    margin-bottom: 0px;
+}
+.pr{
+    background-color: var(--dark-color);
+}
+.card{
+    border: 1px solid rgba(0, 0, 0, 0.385);
+    border-radius: 5px;
+    overflow: hidden;
+}
+.Subscribe{
+    background-color: var(--yellow-color);
+}
+.Subscribe input{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    font-weight: 500;
+}
+.Subscribe input:focus,
+.Subscribe input:hover{
+    outline: none;
+}
+.prg{
+    color: var(--dark-color);
+}
+.Subscribe div button{
+    background-color: var(--dark-color);
+    border-radius: 30px;
+    font-weight: 500;
+}
+.Subscribe div button:focus{
+    color: var(--dark-color);
+    background-color: var(--yellow-color);
+    border: 1px solid var(--dark-color);
+}
+.Subscribe div button:hover{
+    color: var(--dark-color);
+    border: 1px solid var(--dark-color);
+}.Subscribe ::placeholder{
+    color: white;
+    font-weight: 500;
+}
+.footer{
+    background-color: var(--dark-color);
+}
+.footer .copyright > span{
+    color: var(--green-color);
+}
+.footer .copyright div span{
+    color: var(--yellow-color);
+}
+.footer .content ul svg{
+    width: 20px;
+    height: 20px;
+}
+.footer .facebook{
+    background-color: #1877f2;
+}
+.footer .twitter{
+    background-color: #14171a;
+}
+.footer .linkedin{
+    background-color: #83941f;
+}
+.footer .youtube{
+    background-color: #ff0000;
+}
